@@ -1,0 +1,31 @@
+/* Timer.css */
+    .timer-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background-circle {
+    fill: none;
+    stroke: #e0e0e0; /* Background color */
+  }
+  
+  .foreground-circle {
+    fill: none;
+    stroke: #00aaff; /* Timer color */
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    transition: stroke-dashoffset 1s linear;
+  }
+  
+  .timer-text {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
